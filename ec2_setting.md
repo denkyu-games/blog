@@ -24,6 +24,6 @@ sudo useradd -G wheel deploy
 
 grep wheel /etc/group // wheelグループのユーザ確認
 
-echo 'group ALL = NOPASSWD: ALL' | sudo tee --append /etc/sudoers.d/cloud-init  // wheelグループ追加以外
+echo 'group ALL = NOPASSWD: ALL' | sudo tee --append /etc/sudoers.d/cloud-init  // sudo su - deploy; sudo -sで確認する
 ```
 
